@@ -23,8 +23,8 @@ setup(
 		"Development Status :: 5 - Production/Stable",
 		"License :: OSI Approved :: Apache Software License",
 	],
-	description = "This python module supports checking directories for changes. Please note that directories are ignored.",
-	download_url = "https://github.com/jkpubsrc/......../tarball/0.2019.8.22",
+	description = "This python module supports checking directories for changes. (Please note that only regular files are taken into account.)",
+	download_url = "https://github.com/jkpubsrc/python-module-jk-dirmonitor/tarball/0.2019.8.22",
 	include_package_data = False,
 	install_requires = [
 	],
@@ -37,7 +37,7 @@ setup(
 	packages = [
 		"jk_dirmonitor",
 	],
-	url = "https://github.com/jkpubsrc/........",
+	url = "https://github.com/jkpubsrc/python-module-jk-dirmonitor",
 	version = "0.2019.8.22",
 	zip_safe = False,
 	long_description = readme(),

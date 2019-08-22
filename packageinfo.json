@@ -3,7 +3,7 @@
 	"name": "jk_dirmonitor",
 	"version": "0.2019.8.22",
 	"meta": {
-		"description": "This python module supports checking directories for changes. Please note that directories are ignored.",
+		"description": "This python module supports checking directories for changes. (Please note that only regular files are taken into account.)",
 		"keywords": [
 			"filesystem", "monitoring"
 		],
@@ -23,7 +23,7 @@
 		{
 			"type": "github",
 			"user": "jkpubsrc",
-			"project": "........",
+			"project": "python-module-jk-dirmonitor",
 			"devon_publish": false
 		},
 		{
