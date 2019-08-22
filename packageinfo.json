@@ -1,0 +1,48 @@
+{
+	"language": "python3",
+	"name": "jk_dirmonitor",
+	"version": "0.2019.8.22",
+	"meta": {
+		"description": "This python module supports checking directories for changes. Please note that directories are ignored.",
+		"keywords": [
+			"filesystem", "monitoring"
+		],
+		"license": "Apache 2.0",
+		"development_status": "stable",
+		"authors": [
+			{
+				"name": "Jürgen Knauth",
+				"email": "pubsrc@binary-overflow.de"
+			}
+		],
+		"wiki": {
+			"page": "DevDocs:jk_dirmonitor"
+		}
+	},
+	"repositories": [
+		{
+			"type": "github",
+			"user": "jkpubsrc",
+			"project": "........",
+			"devon_publish": false
+		},
+		{
+			"type": "pypy",
+			"devon_publish": false
+		}
+	],
+	"source": {
+		"packages": [
+			"jk_dirmonitor"
+		],
+		"extra_data_files": [
+		]
+	},
+	"requirements": {
+		"python_packages": [
+		],
+		"python_packages_dev": [
+		]
+	}
+}
+
