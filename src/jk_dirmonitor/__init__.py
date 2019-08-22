@@ -7,7 +7,6 @@ from .DirectoryMonitor import DirectoryMonitor
 
 
 
-__version__ = "0.2019.8.22"
-
+__version__ = "0.2019.8.22.1"
 
 

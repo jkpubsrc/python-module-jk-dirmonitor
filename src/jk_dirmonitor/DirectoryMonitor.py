@@ -18,6 +18,35 @@ class DirectoryMonitor(object):
 		self.__entries = {}									# stores FileEntry objects
 	#
 
+	@property
+	def dirPath(self) -> str:
+		return self.__dirPath
+	#
+
+	def get(self, fileName:str) -> FileEntry:
+		return self.__entries.get(fileName)
+	#
+
+	#
+	# Returns a sorted list of file names.
+	#
+	# @return	str[]		The current set of file names in the directory watched.
+	#
+	@property
+	def fileNames(self) -> list:
+		return sorted(self.__entries.keys())
+	#
+
+	#
+	# Returns a sorted list of file entry objects.
+	#
+	# @return	FileEntry[]		The current set of file entries in the directory watched.
+	#
+	@property
+	def fileEntries(self) -> list:
+		return [ self.__entries[fe] for fe in sorted(self.__entries.keys()) ]
+	#
+
 	def update(self) -> Tuple[List, List, List, List]:
 		newFiles = []										# stores FileEntry objects
 		modifiedFiles = []									# stores FileEntry objects
@@ -43,7 +72,7 @@ class DirectoryMonitor(object):
 				else:
 					# this file is new
 					stat = dirEntry.stat()
-					fe = FileEntry(dirEntry.name, dirEntry.path, stat.st_mtime, stat.st_size)
+					fe = FileEntry(dirEntry.name, os.path.abspath(dirEntry.path), stat.st_mtime, stat.st_size)
 					self.__entries[fe._name] = fe
 					newFiles.append(fe)
 

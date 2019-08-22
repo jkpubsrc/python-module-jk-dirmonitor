@@ -6,3 +6,6 @@ examples/__pycache__/
 .svn/
 .vscode
 examples/*.log
+src/build/
+src/jk_dirmonitor.egg-info/
+

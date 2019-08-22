@@ -1,7 +1,7 @@
 {
 	"language": "python3",
 	"name": "jk_dirmonitor",
-	"version": "0.2019.8.22",
+	"version": "0.2019.8.22.1",
 	"meta": {
 		"description": "This python module supports checking directories for changes. (Please note that only regular files are taken into account.)",
 		"keywords": [
