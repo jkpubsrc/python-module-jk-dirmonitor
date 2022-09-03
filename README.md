@@ -8,7 +8,7 @@ This python module ...
 
 Information about this module can be found here:
 
-* [github.org](https://github.com/jkpubsrc/....)
+* [github.com](https://github.com/jkpubsrc/python-module-jk-dirmonitor)
 * [pypi.python.org](https://pypi.python.org/pypi/jk_dirmonitor)
 
 Why this module?
